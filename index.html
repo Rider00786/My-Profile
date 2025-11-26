@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+
+        <div class="menu" id="circle" >
+            <button id="open" onclick="rotate_page(); slide_bar(); bubble();" >
+                <div class="icon">&#9776;</div>
+                <!-- <i class="fa-solid fa-user"></i> -->
+            </button>
+
+            <button id="close" onclick="rotate_page_reverse(); reverse_slide_bar(); reverse_bubble();">
+                <i>&times;</i>
+            </button> 
+        </div>
+
+        <div class="page" id="pg">
+            <div class="profile">
+
+                <div class="p_image">
+    
+                </div>
+
+                <div class="content"><br><br>
+                    <h1>こんにちは</h1>
+-
+                    <div class="box">
+                        <div class="box1">
+                            <img src="icons8-instagram-50.png" alt="instagram">
+                        </div>
+                        <div class="box2">
+                            <button id="bubble" onclick="bubble(); rotate_page(); slide_bar();">
+                                <img src="icons8-linkedin-circled-50.png" alt="linkedin">
+                            </button>
+                        </div>
+                        <div class="box3">
+                            <img src="icons8-youtube-50.png" alt="youtube">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    <nav>
+        <ul>
+            <li id="home"><a href="index.html">HOME</a></li>
+            <li id="about">ABOUT</li>
+            <li id="contact">CONTACT</li>
+        </ul>
+    </nav>
+</body>
+<script src="script.js"></script>
+</html>
